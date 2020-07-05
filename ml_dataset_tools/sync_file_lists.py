@@ -62,10 +62,16 @@ class SyncFileLists:
         selected_lists = [self.dict_lists[name] for name in names]
         flag = np.array([fn(*items) for items in zip(*selected_lists)], dtype='bool')
         return SyncFileLists(
-            {name: selected_list[flag] for name, selected_list in zip(names, selected_lists)},
+            {name: lst[flag] for name, lst in self.dict_lists.items()},
             self._selector[flag]
         )
 
     @property
     def is_val(self):
         raise NotImplementedError("Use with_val insread")
+
+    def __eq__(self, other):
+        if type(other) != SyncFileLists:
+            raise ValueError("Cannot compare {} to {}".format(type(self), type(other)))
+
+        return self.dict_lists == other.dict_lists and np.array_equal(self._selector, other._selector)

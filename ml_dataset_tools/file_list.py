@@ -20,3 +20,9 @@ class FileList:
 
     def __getitem__(self, idx):
         return self.lst[idx]
+
+    def __eq__(self, other):
+        if not isinstance(other, FileList):
+            return False
+
+        return np.array_equal(self.lst, other.lst)

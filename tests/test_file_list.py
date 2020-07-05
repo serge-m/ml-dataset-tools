@@ -56,3 +56,13 @@ def test_side_effects():
 
     assert original_list == ['aa', 'ab', 'bb']
     assert list(fl) == ['aa', 'ab', 'bb']
+
+
+def test_eq():
+    fl1 = mdt.FileList(['aa', 'ab', 'bb'])
+
+    assert fl1 == mdt.FileList(['aa', 'ab', 'bb'])
+    assert fl1 != mdt.FileList(['aa'])
+    assert fl1 != mdt.FileList(['aa', 'ab', 'Xb'])
+    assert fl1 == fl1
+    assert mdt.FileList([]) == mdt.FileList([])
