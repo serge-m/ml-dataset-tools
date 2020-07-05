@@ -21,7 +21,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 
-import ml_dataset_tools
+import ml_dataset_tools.version
 
 # -- General configuration ---------------------------------------------
 
