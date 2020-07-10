@@ -62,12 +62,12 @@ Ready to contribute? Here's how to set up `ml-dataset-tools` for local developme
 1. Fork the `ml-dataset-tools` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/pytorch_nn_tools.git
+    $ git clone git@github.com:your_name_here/ml-dataset-tools.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv pytorch_nn_tools
-    $ cd pytorch_nn_tools/
+    $ mkvirtualenv ml-dataset-tools
+    $ cd ml-dataset-tools/
     $ python setup.py develop
 
 4. Create a branch for local development::

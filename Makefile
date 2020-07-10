@@ -48,7 +48,7 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr .pytest_cache
 
 lint: ## check style with flake8
-	flake8 pytorch_nn_tools tests
+	flake8 ml_dataset_tools tests
 
 test: ## run tests quickly with the default Python
 	pytest
@@ -57,15 +57,15 @@ test-all: ## run tests on every Python version with tox
 	tox
 
 coverage: ## check code coverage quickly with the default Python
-	coverage run --source pytorch_nn_tools -m pytest
+	coverage run --source ml_dataset_tools -m pytest
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html
 
 docs: ## generate Sphinx HTML documentation, including API docs
-	rm -f docs/pytorch_nn_tools.rst
+	rm -f docs/ml_dataset_toolss.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ pytorch_nn_tools
+	sphinx-apidoc -o docs/ ml_dataset_toolss
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	$(BROWSER) docs/_build/html/index.html

@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = python -msphinx
-SPHINXPROJ    = pytorch_nn_tools
+SPHINXPROJ    = ml_dataset_tools
 SOURCEDIR     = .
 BUILDDIR      = _build
 

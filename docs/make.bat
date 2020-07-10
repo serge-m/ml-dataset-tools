@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=pytorch_nn_tools
+set SPHINXPROJ=ml_dataset_tools
 
 if "%1" == "" goto help
 
