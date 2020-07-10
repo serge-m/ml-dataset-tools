@@ -22,7 +22,7 @@ deploy:
   distributions: sdist bdist_wheel
   user: serge-m
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: eLOuKF8DcT3+ZoNl+90Oum4+OHF3KSLli21tXzTGn/LFHXJdHO+5tWK09DVAsP3b49ppd5ni0WW2uZlRwAwyS02FCepCRskdpkwyHEFBB3oMcayv1GSGf3O1Ub9Fztu/t9s3AuFMC+up5m/qp6jeAZtBXECyinPM++NQa+QJQ+LZwi/TKdaxzfq2p+4QJEr6P+xnzBnn1GfRaKldg1+ItzYX/3GCxEof3Vob6oUmhvOLCDlutoRW/ZjecxVbNO+W+6DJAjGOhcDYMzZ310BaKiShgFdEaJbdY2qDpU8MY/Q7a899TodkNLzEixs2FwV6EITjXUjvjFLvTsUIR09ZIY4fPsN60CrBqd4ZBQIrNfrOHlSqegOveeC8lT3k37tPLlWmyZzWi4ybVgcLP55xupLHZD5euMX2PsvmfmrxeFbJQjkUpLgoW3Ja19O0XuxR9+UINW6CYRPcNBnirVrqCyV9KGBCYBxZrMdXEQYKXZfkb8Df5lvJR6TteKFhz9N24VLweymQOBu7UqlFft+IQ6FuQN4gtw0eO0TyMbBZdeE+OxkyATKB/rdioeDtjOSdKefcD9B/Tuz/GMuyeMJw5qXbvNiStIWb6byS9WUGu2I7AGJyEkBPwf3NOJLHjQrNKt1Aod5VqmA7hGwrxhPgAt9q7729eeqv7/gcqlSuLwE=
   on:
     tags: true
     repo: serge-m/ml-dataset-tools
