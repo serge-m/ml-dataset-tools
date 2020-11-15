@@ -7,8 +7,8 @@ from ml_dataset_tools.file_list import FileList
 
 class SyncFileLists:
     class Type(Enum):
-        train = 0,
-        valid = 1,
+        train = 0
+        valid = 1
         test = 2
 
     def __init__(self, dict_lists, selector=None):
@@ -68,7 +68,7 @@ class SyncFileLists:
 
     @property
     def is_val(self):
-        raise NotImplementedError("Use with_val insread")
+        raise NotImplementedError("Use with_val instead")
 
     def __eq__(self, other):
         if type(other) != SyncFileLists:

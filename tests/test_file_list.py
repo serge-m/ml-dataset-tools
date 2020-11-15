@@ -29,6 +29,7 @@ def test_transform():
 
     res = fl.transform(lambda x: x.replace('a', 'c'))
 
+    assert isinstance(res, mdt.FileList)
     assert list(res) == ['cc', 'cb', 'bb']
 
 
